@@ -1,0 +1,18 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+<a href="/auction">Home</a>
+<a href="/logout">Log out</a>
+<h1>@ViewBag.CurrentItem.Product</h1>
+<h5>Created by @ViewBag.CurrentItem.user.Firstname</h5>
+<h5>Will be sold by: @ViewBag.CurrentItem.EndDate.ToString("MMM/dd/yyyy")</h5>
+<h6>@ViewBag.CurrentItem.Description</h6>
+<h5>Current highest bid:  $@ViewBag.CurrentItem.StartBid</h5>
+<h5>Highest bidder:  </h5>
+<form action="/bid" method="post">
+    <input type="hidden" name="UserId" value="@ViewBag.ActiveUser.UserId">
+    <input type="hidden" name="ItemId" value="@ViewBag.CurrentItem.ItemId">
+    <input type="number" name="UserBid" value="Your bid goes here">
+    <input type="submit" value="Bid!">
+</form>
+

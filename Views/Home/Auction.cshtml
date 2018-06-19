@@ -1,0 +1,35 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h1>Current Auctions</h1>
+<h5>Hi @ViewBag.ActiveUser.Firstname!</h5>
+<a href="/logout">Log out</a>
+<table>
+    <thead>
+        <th>Product   |</th>
+        <th>|   Seller   |</th>
+        <th>|   Top Bid   |</th>
+        <th>|   Time Remaining   |</th>
+        <th>|   Action</th>
+    </thead>
+    @{
+        foreach (var item in @ViewBag.AllItems)
+        {
+            <tr>
+                <th><a href="/auction/item/@item.ItemId">@item.Product</a></th>
+                <th>|   @item.user.Firstname</th>
+                <th>|   $@item.StartBid</th>
+                <th>|   @item.EndDate.ToString("d")</th>
+                @{if (@ViewBag.ActiveUser.UserId == @item.UserId)
+                {
+                    <th><a href="/delete/@item.ItemId">Delete</a></th>
+                }}
+            </tr>
+        }
+    }
+</table>
+<form method="get" action="/NewAuction">
+    <input type="submit" value="New Auction">
+</form>
+
+<h5>Current Balance: $@ViewBag.ActiveUser.Wallet</h5>

@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h1>New Auction</h1>
+<a href="/auction">Home</a>
+<a href="/logout">Log out</a>
+
+<form method="post" action="/newitem">
+    <table>
+        <input type="hidden" name="UserId" value="@ViewBag.ActiveUser.UserId">
+        <tr>
+            <th>Product Name: </th>
+            <th><input type="text" name="Product"></th>
+        </tr>
+        <tr>
+            <th>Starting Bid: </th>
+            <th><input type="number" name="StartBid"></th>
+        </tr>
+        <tr>
+            <th>End Date: </th>
+            <th><input type="date" name="EndDate"></th>
+        </tr>
+        <tr>
+            <th>Description: </th>
+            <th><textarea rows="4" cols="30" name="Description"></textarea></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th><input type="submit" value="Create Auction"</th>
+        </tr>
+    </table>
+</form>

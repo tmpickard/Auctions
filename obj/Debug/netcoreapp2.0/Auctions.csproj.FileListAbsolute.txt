@@ -1,0 +1,11 @@
+/Users/tedpickard/Desktop/DojoAssignments/C#/C#_Review/Auctions/bin/Debug/netcoreapp2.0/Auctions.deps.json
+/Users/tedpickard/Desktop/DojoAssignments/C#/C#_Review/Auctions/bin/Debug/netcoreapp2.0/Auctions.runtimeconfig.json
+/Users/tedpickard/Desktop/DojoAssignments/C#/C#_Review/Auctions/bin/Debug/netcoreapp2.0/Auctions.runtimeconfig.dev.json
+/Users/tedpickard/Desktop/DojoAssignments/C#/C#_Review/Auctions/bin/Debug/netcoreapp2.0/Auctions.dll
+/Users/tedpickard/Desktop/DojoAssignments/C#/C#_Review/Auctions/bin/Debug/netcoreapp2.0/Auctions.pdb
+/Users/tedpickard/Desktop/DojoAssignments/C#/C#_Review/Auctions/obj/Debug/netcoreapp2.0/Auctions.csprojResolveAssemblyReference.cache
+/Users/tedpickard/Desktop/DojoAssignments/C#/C#_Review/Auctions/obj/Debug/netcoreapp2.0/Auctions.csproj.CoreCompileInputs.cache
+/Users/tedpickard/Desktop/DojoAssignments/C#/C#_Review/Auctions/obj/Debug/netcoreapp2.0/Auctions.AssemblyInfoInputs.cache
+/Users/tedpickard/Desktop/DojoAssignments/C#/C#_Review/Auctions/obj/Debug/netcoreapp2.0/Auctions.AssemblyInfo.cs
+/Users/tedpickard/Desktop/DojoAssignments/C#/C#_Review/Auctions/obj/Debug/netcoreapp2.0/Auctions.dll
+/Users/tedpickard/Desktop/DojoAssignments/C#/C#_Review/Auctions/obj/Debug/netcoreapp2.0/Auctions.pdb
